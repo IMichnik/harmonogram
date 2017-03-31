@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{551AD864-141E-4977-9601-AD86E0A96CAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\Harmonogram\packages\npgsql.3.0.7\lib\net45\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fmDniRobocze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDniRobocze.Designer.cs">
+      <DependentUpon>fmDniRobocze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmDzienRoboczyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDzienRoboczyEdit.Designer.cs">
+      <DependentUpon>fmDzienRoboczyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmEdit.Designer.cs">
+      <DependentUpon>fmEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmGenerate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmGenerate.Designer.cs">
+      <DependentUpon>fmGenerate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmGenerateWorkDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmGenerateWorkDays.Designer.cs">
+      <DependentUpon>fmGenerateWorkDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmGrid.Designer.cs">
+      <DependentUpon>fmGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmHarmonogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmHarmonogram.Designer.cs">
+      <DependentUpon>fmHarmonogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmHarmonogramEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmHarmonogramEdit.Designer.cs">
+      <DependentUpon>fmHarmonogramEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmLogIn.Designer.cs">
+      <DependentUpon>fmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmMainForm.Designer.cs">
+      <DependentUpon>fmMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmNieobecnosciEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmNieobecnosciEdit.Designer.cs">
+      <DependentUpon>fmNieobecnosciEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmNieobecnosci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmNieobecnosci.Designer.cs">
+      <DependentUpon>fmNieobecnosci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmObsada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmObsada.Designer.cs">
+      <DependentUpon>fmObsada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmPasswordChangingcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmPasswordChangingcs.Designer.cs">
+      <DependentUpon>fmPasswordChangingcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmPracownicy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmPracownicy.Designer.cs">
+      <DependentUpon>fmPracownicy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmPracownikEdycja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmPracownikEdycja.Designer.cs">
+      <DependentUpon>fmPracownikEdycja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmPreferencje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmPreferencje.Designer.cs">
+      <DependentUpon>fmPreferencje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmPreferencjeDef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmPreferencjeDef.Designer.cs">
+      <DependentUpon>fmPreferencjeDef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmStatystyki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmStatystyki.Designer.cs">
+      <DependentUpon>fmStatystyki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmTools.Designer.cs">
+      <DependentUpon>fmTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uClasseses.cs" />
+    <Compile Include="uEngine.cs" />
+    <Compile Include="uIniFile.cs" />
+    <EmbeddedResource Include="fmDniRobocze.resx">
+      <DependentUpon>fmDniRobocze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmDzienRoboczyEdit.resx">
+      <DependentUpon>fmDzienRoboczyEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmEdit.resx">
+      <DependentUpon>fmEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmGenerate.resx">
+      <DependentUpon>fmGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmGenerateWorkDays.resx">
+      <DependentUpon>fmGenerateWorkDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmGrid.resx">
+      <DependentUpon>fmGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmHarmonogram.resx">
+      <DependentUpon>fmHarmonogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmHarmonogramEdit.resx">
+      <DependentUpon>fmHarmonogramEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmLogIn.resx">
+      <DependentUpon>fmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmMainForm.resx">
+      <DependentUpon>fmMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmNieobecnosciEdit.resx">
+      <DependentUpon>fmNieobecnosciEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmNieobecnosci.resx">
+      <DependentUpon>fmNieobecnosci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmObsada.resx">
+      <DependentUpon>fmObsada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmPasswordChangingcs.resx">
+      <DependentUpon>fmPasswordChangingcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmPracownicy.resx">
+      <DependentUpon>fmPracownicy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmPracownikEdycja.resx">
+      <DependentUpon>fmPracownikEdycja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmPreferencje.resx">
+      <DependentUpon>fmPreferencje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmPreferencjeDef.resx">
+      <DependentUpon>fmPreferencjeDef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmStatystyki.resx">
+      <DependentUpon>fmStatystyki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmTools.resx">
+      <DependentUpon>fmTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

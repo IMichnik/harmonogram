@@ -1,0 +1,6 @@
+c:\users\kornem\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\kornem\Documents\Visual Studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\kornem\Documents\Visual Studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\kornem\Documents\Visual Studio 2015\Projects\Harmonogram\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\kornem\Documents\Visual Studio 2015\Projects\Harmonogram\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\kornem\Documents\Visual Studio 2015\Projects\Harmonogram\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
